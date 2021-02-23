@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "57664046850",
+    "firebase_url": "https://aplikasi-kuliner-5ccf9-default-rtdb.firebaseio.com",
+    "project_id": "aplikasi-kuliner-5ccf9",
+    "storage_bucket": "aplikasi-kuliner-5ccf9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57664046850:android:124c224671b92259a4e41b",
+        "android_client_info": {
+          "package_name": "com.example.kulineran"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57664046850-v8dasj0apnndcnhogosdc2im6dovmlcs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kulineran",
+            "certificate_hash": "74bd8a7d8d2d58aae567eaae6a81545819ed3b02"
+          }
+        },
+        {
+          "client_id": "57664046850-9e6kasmf056ao0slv67ci4p5vr2on45f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHbaD3Ae_FWZkckFygR1tsqI2fT8Z6ztE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57664046850-9e6kasmf056ao0slv67ci4p5vr2on45f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
