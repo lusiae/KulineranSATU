@@ -47,19 +47,26 @@ public class Info_makanan extends AppCompatActivity {
 
         list_data = new ArrayList<HashMap<String, String>>();
 
-        stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                String s = response;
                 try {
-                    JSONObject jsonObject = new JSONObject(response);
-                    JSONArray jsonArray = jsonObject.getJSONArray("pecel");
-                    for (int a = 0; a < jsonArray.length(); a ++){
-                        JSONObject json = jsonArray.getJSONObject(a);
-                        HashMap<String, String> map  = new HashMap<String, String>();
-                        map.put("id", json.getString("id"));
-                        map.put("nama", json.getString("nama"));
-                        map.put("deskripsi", json.getString("deskripsi"));
-                        list_data.add(map);
+                    JSONObject jsonObject = new JSONObject(s);
+                    JSONArray a = jsonObject.getJSONArray("pecel");
+                    for (int i = 0; i < a.length(); i ++){
+                        JSONObject c = a.getJSONObject(i);
+//                        HashMap<String, String> map  = new HashMap<String, String>();
+//                        map.put("nama", json.getString("nama"));
+//                        map.put("deskripsi", json.getString("deskripsi"));
+
+                        String nama = c.getString("nama");
+                        String deskripsi = c.getString("deskripsi");
+
+                        txtnama.setText(nama);
+                        txtdeskripsi.setText(deskripsi);
+                        Toast.makeText(Info_makanan.this, nama,
+                                Toast.LENGTH_SHORT).show();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
